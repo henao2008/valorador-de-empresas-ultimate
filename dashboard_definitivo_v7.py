@@ -121,11 +121,11 @@ AÑO_HORIZONTE = st.sidebar.select_slider(
 )
 
 if "watchlist" not in st.session_state:
-    st.session_state.watchlist = ["TEF.MC", "ORA.PA", "MSFT"]
+    st.session_state.watchlist = ["GOOG", "NVDA", "MSFT"]
 if "ticker1_value" not in st.session_state:
-    st.session_state.ticker1_value = "TEF.MC"
+    st.session_state.ticker1_value = "GOOG"
 if "ticker2_value" not in st.session_state:
-    st.session_state.ticker2_value = "ORA.PA"
+    st.session_state.ticker2_value = "NVDA"
 
 with st.sidebar.expander("⭐ Watchlist", expanded=True):
     st.caption(f"Versión {VERSION_APP} · {len(st.session_state.watchlist)}/8")
@@ -481,10 +481,10 @@ _render_fuentes()
 # 2. Buscador interactivo
 col_search1, col_search2 = st.columns(2)
 ticker1 = col_search1.text_input(
-    "Ticker Empresa Principal (ej. TEF.MC, MSFT, DIGI.RO):", key="ticker1_value"
+    "Ticker Empresa Principal (ej. GOOG, NVDA, MSFT):", key="ticker1_value"
 ).upper().strip()
 ticker2 = col_search2.text_input(
-    "Ticker Competencia (ej. ORA.PA, AAPL):", key="ticker2_value"
+    "Ticker Competencia (ej. NVDA, GOOG, AAPL):", key="ticker2_value"
 ).upper().strip()
 
 if ticker1 and ticker2 and ticker1 == ticker2:
