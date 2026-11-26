@@ -25,8 +25,8 @@ En modo local, los datos se guardan en `data_private_local/`, excluida de Git.
 
 ## Publicar en Streamlit Community Cloud
 
-1. Publica este código en un repositorio de GitHub sin extractos ni claves.
-2. En Streamlit Community Cloud despliega `streamlit_app.py` desde la rama `main`.
+1. Abre Streamlit Community Cloud y elige crear una app.
+2. Selecciona el repositorio `henao2008/valorador-de-empresas-ultimate`, la rama `finanzas-revolut-dashboard` y la ruta `streamlit_app.py`.
 3. Marca la app como privada para limitar quién puede abrirla.
 4. En **App settings → Secrets**, configura los secretos anteriores.
 5. Crea un acceso directo del navegador a la URL `*.streamlit.app`.
@@ -34,4 +34,3 @@ En modo local, los datos se guardan en `data_private_local/`, excluida de Git.
 ## Importar el extracto
 
 Desde la app, sube el CSV o Excel de Revolut. El archivo debe incluir fecha, concepto/description e importe/amount. Se reconocen los nombres de columna habituales en español e inglés. La app añade solo movimientos nuevos; revisa todos los no clasificados antes de generar el informe.
-
