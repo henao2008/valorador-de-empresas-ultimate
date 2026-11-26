@@ -1,0 +1,10 @@
+# Whitelist the app only. Transaction files, other local projects, and credentials stay private.
+*
+!.gitignore
+!README.md
+!requirements.txt
+!streamlit_app.py
+!.streamlit/
+.streamlit/*
+!.streamlit/config.toml
+
